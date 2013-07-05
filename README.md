@@ -5,6 +5,6 @@ This is a presentation template for Pivots who prefer to write presentations usi
 ## To use
 1. `$ bundle install`
 2. Start writing slides in `deck.md` using markdown.
-3. `$ rake`
+3. `$ rake build` and in a new tab `$ rake open`
 4. ???
 5. Profit!
