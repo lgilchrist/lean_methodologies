@@ -11,6 +11,11 @@ task :build do
   Happy presentation-writing!
 
   ****************'
+  trap('INT') do
+    puts "Exiting mdpress..."
+    exit 0
+  end
+
   `mdpress -a deck.md -s pivotal`
 
 end
