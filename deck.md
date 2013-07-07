@@ -1,5 +1,7 @@
 # Hi!
 
+You can press "p" at any time to open the presentation console.
+
 ---
 
 This is a sample presentation.
@@ -32,11 +34,11 @@ Abraham Lincoln
 - What makes nation unique
 	- Conceived in Liberty
 	- Men are equal
-	
+
 - Shared vision
 	- New birth of freedom
 	- Gov't of/for/by the people
-	
+
 ---
 
 # Organizational Overview
@@ -57,3 +59,10 @@ Abraham Lincoln
 ---
 
 With thanks to <http://norvig.com/Gettysburg/sld001.htm>
+
+---
+<script src="js/impressConsole.js"></script>
+<script>
+    impressConsole().init();
+    // impressConsole().open(); // for console to open automatically
+</script>
