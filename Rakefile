@@ -5,7 +5,7 @@ task :build do
   Starting a server to build your deck!
 
   1. Keep this terminal open, and
-  2. `rake open` in a new terminal. Changes to `deck.md` will automatically be built, just 
+  2. `rake open` in a new terminal. Changes to `deck.md` will automatically be built, just
   3. refresh the page.
 
   Happy presentation-writing!
@@ -16,7 +16,7 @@ task :build do
 end
 
 task :open do
-  `open deck/index.html`
+  `launchy deck/index.html`
 end
 
 task :default => [:build]

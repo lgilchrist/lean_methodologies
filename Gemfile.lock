@@ -16,5 +16,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  launchy
   mdpress
   rake
