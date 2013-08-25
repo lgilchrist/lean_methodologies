@@ -1,3 +1,4 @@
+desc "Start mdpress, which will watch `deck.md` and build your presentation automatically."
 task :build do
   puts '
   ****************
@@ -11,15 +12,16 @@ task :build do
   Happy presentation-writing!
 
   ****************'
+
   trap('INT') do
     puts "Exiting mdpress..."
     exit 0
   end
 
   `mdpress -a deck.md -s pivotal`
-
 end
 
+desc "Open up your presentation."
 task :open do
   `launchy deck/index.html`
 end
