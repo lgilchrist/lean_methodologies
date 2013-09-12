@@ -1,6 +1,6 @@
 desc "Start mdpress, which will watch `deck.md` and build your presentation automatically."
 task :build do
-  puts '
+  puts <<-'TEXT'
   ****************
 
   Starting a server to build your deck!
@@ -11,19 +11,20 @@ task :build do
 
   Happy presentation-writing!
 
-  ****************'
+  ****************
+  TEXT
 
   trap('INT') do
     puts "Exiting mdpress..."
     exit 0
   end
 
-  `mdpress -a deck.md -s pivotal`
+  sh "mdpress --automatic deck.md --stylesheet pivotal &"
 end
 
 desc "Open up your presentation."
-task :open do
-  `launchy deck/index.html`
+task :open => :build do
+  sh "launchy deck/index.html"
 end
 
-task :default => [:build]
+task :default => [:open]
