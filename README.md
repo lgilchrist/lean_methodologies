@@ -8,3 +8,6 @@ This is a presentation template for Pivots who prefer to write presentations usi
 3. `$ rake build` and in a new tab `$ rake open`
 4. ???
 5. Profit!
+
+## Features
+- Presentation Console with look-ahead and notes. (Hit 'p' to activate.)

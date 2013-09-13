@@ -1,16 +1,21 @@
 # Hi!
 
-You can press "p" at any time to open the presentation console.
+This is a sample presentation. 
 
----
+- You can press "p" at any time to open the Presentation Console.
+- Notes can be seen in the Presentation Console. Write them in html like this:
 
-This is a sample presentation.
+        &lt;div class="notes"&gt;This is a note.&lt;/div&gt;
 
 ---
 
 # Gettysburg Cemetery Dedication
 Abraham Lincoln
 11/19/1863
+
+<div class="notes">
+  Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.
+</div>
 
 ---
 
